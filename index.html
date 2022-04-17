@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
     <title>AdoteAqui</title>
 </head>
 
 <body>
-    <header>
-        <img src="./img/logo-header.svg" alt="">
+    <header class="container" id="home">
+        <a href="#home"><img src="./img/logo-header.svg" alt=""></a>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -20,6 +25,53 @@
             </ul>
         </nav>
     </header>
+    <section class="introducao-bg">
+        <div class="introducao">
+            <img src="./img/img-intro.svg" width="480" height="460" alt="">
+            <div class="intro-conteudo">
+                <div class="intro-texto">
+                    <h1>Temos vários bichinhos <br> precisando de um lar.</h1>
+                    <p>O número de gatos e cachorros abandonados aumentam ano após ano. Nossa ONG precisa da sua ajuda!</p>
+                    <p><strong>Adote um companheiro(a) e incentive os seus amigos e familiares a fazerem o mesmo.</strong></p>
+                    <a href="#pets"><button>Quero Adotar</button></a>
+                    <button>Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pets-bg" id="pets">
+        <div class="pets-conteudo">
+            <div class="pets-titulo">
+                <h1>Escolha seus pets.</h1>
+                <input type="radio" name="escolha" value="dog" id="dog">
+                <label for="dog">Cachorro</label>
+
+                <input type="radio" name="escolha" value="cat" id="cat">
+                <label for="cat">Gato</label>
+
+                <div class="dog1">
+                    <img src="./img/pets/dog1.jpg" width="230" height="280" alt="">
+                </div>
+                <div class="dog2">
+                    <img src="./img/pets/dog2.jpg" width="230" height="280" alt="">
+                </div>
+                <div class="dog3">
+                    <img src="./img/pets/dog3.jpg" width="230" height="280" alt="">
+                </div>
+                <div class="dog4">
+                    <img src="./img/pets/dog4.jpg" width="230" height="280" alt="">
+                </div>
+                <div class="dog5">
+                    <img src="./img/pets/dog5.jpg" width="230" height="280" alt="">
+                </div>
+                <div class="dog6">
+                    <img src="./img/pets/dog2.jpg" width="230" height="280" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
