@@ -42,35 +42,122 @@
 
     <section class="pets-bg" id="pets">
         <div class="pets-conteudo">
-            <div class="pets-titulo">
-                <h1>Escolha seus pets.</h1>
-                <input type="radio" name="escolha" value="dog" id="dog">
-                <label for="dog">Cachorro</label>
+            <h1 class="pets-titulo">Escolha seus pets.</h1>
+            <input type="radio" name="escolha" value="dog" id="dog" checked="checked">
+            <label for="dog">Cachorro</label>
 
-                <input type="radio" name="escolha" value="cat" id="cat">
-                <label for="cat">Gato</label>
+            <input type="radio" name="escolha" value="cat" id="cat">
+            <label for="cat">Gato</label>
 
-                <div class="dog1">
-                    <img src="./img/pets/dog1.jpg" width="230" height="280" alt="">
+            <div class="dogs-display">
+                <div class="dogs-container">
+                    <div class="dog1">
+                        <img src="./img/pets/dog1.jpg" width="230" height="280" alt="">
+                        <h3>Nenis</h3>
+                        <small>Fêmea | 4 meses</small>
+                    </div>
+                    <div class="dog2">
+                        <img src="./img/pets/dog2.jpg" width="230" height="280" alt="">
+                        <h3>Pagode</h3>
+                        <small>Macho | 2 anos</small>
+                    </div>
+                    <div class="dog3">
+                        <img src="./img/pets/dog3.jpg" width="230" height="280" alt="">
+                        <h3>Oton</h3>
+                        <small>Macho | 1 ano</small>
+                    </div>
+                    <div class="dog4">
+                        <img src="./img/pets/dog4.jpg" width="230" height="280" alt="">
+                        <h3>Nenis</h3>
+                        <small>Fêmea | 4 meses</small>
+                    </div>
+                    <div class="dog5">
+                        <img src="./img/pets/dog5.jpg" width="230" height="280" alt="">
+                        <h3>Péricles</h3>
+                        <small>Macho | 1 ano</small>
+                    </div>
+                    <div class="dog6">
+                        <img src="./img/pets/dog6.jpg" width="230" height="280" alt="">
+                        <h3>Frederico</h3>
+                        <small>Macho | 2 anos</small>
+                    </div>
                 </div>
-                <div class="dog2">
-                    <img src="./img/pets/dog2.jpg" width="230" height="280" alt="">
+            </div>
+
+            <div class="cats-display">
+                <div class="cats-container">
+                    <div class="cat1">
+                        <img src="./img/pets/cat1.jpg" width="230" height="280" alt="">
+                        <h3>Mila</h3>
+                        <small>Fêmea | 11 meses</small>
+                    </div>
+                    <div class="cat2">
+                        <img src="./img/pets/cat2.jpg" width="230" height="280" alt="">
+                        <h3>Lecter</h3>
+                        <small>Macho | 1 ano</small>
+                    </div>
+                    <div class="cat3">
+                        <img src="./img/pets/cat3.jpg" width="230" height="280" alt="">
+                        <h3>Frida</h3>
+                        <small>Fêmea | 1 mês</small>
+                    </div>
+                    <div class="cat4">
+                        <img src="./img/pets/cat4.jpg" width="230" height="280" alt="">
+                        <h3>Lully</h3>
+                        <small>Fêmea | 5 meses</small>
+                    </div>
+                    <div class="cat5">
+                        <img src="./img/pets/cat5.jpg" width="230" height="280" alt="">
+                        <h3>Samantha</h3>
+                        <small>Fêmea | 1 ano</small>
+                    </div>
+                    <div class="cat6">
+                        <img src="./img/pets/cat6.jpg" width="230" height="280" alt="">
+                        <h3>Lua</h3>
+                        <small>Fêmea | 2 anos</small>
+                    </div>
                 </div>
-                <div class="dog3">
-                    <img src="./img/pets/dog3.jpg" width="230" height="280" alt="">
-                </div>
-                <div class="dog4">
-                    <img src="./img/pets/dog4.jpg" width="230" height="280" alt="">
-                </div>
-                <div class="dog5">
-                    <img src="./img/pets/dog5.jpg" width="230" height="280" alt="">
-                </div>
-                <div class="dog6">
-                    <img src="./img/pets/dog2.jpg" width="230" height="280" alt="">
-                </div>
+            </div>
+            <div class="ver-link">
+                <a href="#">Ver todos</a>
+            </div>
+    </section>
+
+    <section class="contato-bg">
+        <div class="contato-container" id="contato">
+            <h1 class="contato-titulo">Entre em contato.</h1>
+            <div class="contato-conteudo">
+                <form action="#">
+                    <label for="nome">Nome</label>
+                    <input type="nome" name="nome" id="nome">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea rows="5" id="mensagem" name="mensagem"></textarea>
+                    <button class="btn-contato">Enviar Mensagem</button>
+                </form>
+
+                <ul class="contato-info">
+                    <li>Salvador - BA</li>
+                    <li>Rua da Federação, 99</li>
+                    <li>+55 71 99999-9999</li>
+                    <li>adoteaqui@contato.com</li>
+                    <ul class="redesocial">
+                        <li><a href="#"><img src="./img/instagram.svg" width="32" height="32" alt=""></a></li>
+                        <li><a href="#"><img src="./img/facebook.svg" width="32" height="32" alt=""></a></li>
+                        <li><a href="#"><img src="./img/youtube.svg" width="32" height="32" alt=""></a></li>
+                    </ul>
+                </ul>
             </div>
         </div>
     </section>
+
+    <footer>
+        <a href="#home"><img src="./img/logo-footer.svg" alt=""></a>
+        <p>AdoteAqui © Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 

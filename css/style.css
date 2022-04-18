@@ -2,6 +2,8 @@ body,
 ul,
 li,
 h1,
+h3,
+small,
 p,
 button {
   margin: 0px;
@@ -40,8 +42,8 @@ ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   margin-top: 10px;
+  gap: 20px;
 }
 
 a {
@@ -107,21 +109,173 @@ button:hover {
 .pets-bg {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
   padding: 60px 40px;
 }
 
-.pets-titulo h1 {
+.pets-titulo {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 30px;
   color: #3c3c3c;
 }
 
-.dog1 {
+.pets-conteudo label {
+  margin-right: 20px;
+}
+
+.dogs-display,
+.cats-display {
   display: none;
 }
 
-#dog:checked ~ .dog1 {
+.dogs-container,
+.cats-container {
+  max-width: 860px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  justify-content: space-between;
+  gap: 100px 0px;
+}
+
+.pets-conteudo img {
+  border-radius: 10px;
+  transition: transform 500ms ease;
+}
+
+.pets-conteudo img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+small {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+h3 {
+  margin-top: 12px;
+  color: #3c3c3c;
+}
+
+#dog:checked ~ .dogs-display {
   display: block;
+}
+
+#cat:checked ~ .cats-display {
+  display: block;
+}
+
+.ver-link {
+  display: flex;
+  justify-content: center;
+}
+
+.ver-link a {
+  color: #707070;
+  position: relative;
+}
+
+.ver-link a::after {
+  content: "▶";
+  font-size: 14px;
+  color: #c74323;
+  position: absolute;
+  right: -20px;
+  top: 1px;
+}
+
+.ver-link a:hover {
+  color: #c74323;
+}
+
+.contato-bg {
+  background-color: #abdcd6;
+}
+
+.contato-container {
+  max-width: max-content;
+  padding: 60px 0px;
+  margin: 0 auto;
+}
+
+.contato-titulo {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #c74323;
+  text-align: center;
+}
+
+.contato-container label {
+  display: block;
+  margin: 12px 0px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #111111;
+}
+
+.contato-container input,
+textarea {
+  width: 450px;
+  padding: 10px 2px;
+  border: 1px solid #c74323;
+  border-radius: 4px;
+  background-color: #fff0e1;
+}
+
+.btn-contato {
+  display: block;
+  background-color: #fff0e1;
+  border: 1px solid #c74323;
+  border-radius: 4px;
+  padding: 7px 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #c74323;
+}
+
+.contato-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+.contato-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #3c3c3c;
+  font-weight: 700;
+  font-size: 24px;
+  padding-top: 12px;
+}
+
+.contato-info li:first-child {
+  color: #c74323;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.redesocial img {
+  transition: transform 150ms ease-out;
+}
+
+.redesocial img:hover {
+  transform: scale(1.15);
+}
+
+footer {
+  background-color: #c74323;
+  text-align: center;
+  color: #fff0e1;
+  padding: 20px 0px;
+  font-weight: 300;
+}
+
+footer img {
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
