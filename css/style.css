@@ -396,6 +396,13 @@ footer img {
   .formulario {
     width: 100%;
   }
+  header {
+    justify-content: center;
+  }
+
+  header img {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -404,12 +411,5 @@ footer img {
   }
   .button {
     font-size: 0.75rem;
-  }
-  header {
-    place-content: center;
-  }
-
-  header ul {
-    margin-top: 1.25rem;
   }
 }
