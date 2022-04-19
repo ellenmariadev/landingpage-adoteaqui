@@ -10,6 +10,10 @@ button {
   padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -17,7 +21,7 @@ button {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f8f6f6;
-  /* font-family: 'Quicksand', sans-serif; */
+  overflow-x: hidden;
 }
 
 img {
@@ -27,9 +31,10 @@ img {
 
 header {
   max-width: 1200px;
-  padding: 30px 40px;
+  padding: 2.5rem;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -42,85 +47,94 @@ ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 a {
   text-decoration: none;
-  color: #707070;
+}
+
+.home {
+  color: #4e4d4c;
+  font-weight: bold;
 }
 
 header a:hover {
-  font-weight: bolder;
+  color: #c74323;
 }
+
+/* --------- HOME --------- */
 
 .introducao-bg {
   background-color: #c74323;
+  padding: 5.625rem;
 }
 
 .introducao {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  padding: 60px 0px;
+  padding: 0 1.875rem;
+  gap: 2.5rem;
   justify-content: center;
+  align-items: center;
 }
 
 .introducao img {
-  margin-right: 60px;
+  height: auto;
 }
 
 .intro-texto {
-  color: #f8f6f6;
-  padding-top: 45px;
+  color: #fff0e1;
 }
 
 .intro-texto h1 {
-  margin-bottom: 20px;
-  font-size: 40px;
+  margin-bottom: 1.25rem;
+  font-size: 2.5rem;
 }
 
 .intro-texto p {
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
   max-width: 36ch;
 }
 
-button {
+.button {
   display: inline-block;
   background-color: transparent;
   border: 1px solid #ffffff;
-  border-radius: 20px;
-  padding: 8px 15px;
+  border-radius: 1.25rem;
+  padding: 0.5rem 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #ffffff;
-  margin-right: 20px;
-  margin-top: 20px;
+  margin-right: 1.25rem;
+  margin-top: 1.6rem;
 }
 
-button:hover {
+.button:hover {
   background-color: #ffffff;
   color: #c74323;
 }
 
+/* --------- PETS --------- */
+
 .pets-bg {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 40px;
+  padding: 3.75rem 2.5rem;
 }
 
 .pets-titulo {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   color: #3c3c3c;
 }
 
 .pets-conteudo label {
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 .dogs-display,
@@ -133,9 +147,9 @@ button:hover {
   max-width: 860px;
   display: flex;
   flex-wrap: wrap;
-  margin: 50px auto;
+  margin: 3.125rem auto;
   justify-content: space-between;
-  gap: 100px 0px;
+  gap: 6.25rem 0;
 }
 
 .pets-conteudo img {
@@ -149,12 +163,12 @@ button:hover {
 }
 
 small {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
 }
 
 h3 {
-  margin-top: 12px;
+  margin-top: 0.75rem;
   color: #3c3c3c;
 }
 
@@ -178,10 +192,10 @@ h3 {
 
 .ver-link a::after {
   content: "▶";
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #c74323;
   position: absolute;
-  right: -20px;
+  right: -1.25rem;
   top: 1px;
 }
 
@@ -189,58 +203,75 @@ h3 {
   color: #c74323;
 }
 
+/* --------- CONTATO --------- */
+
 .contato-bg {
   background-color: #abdcd6;
+  padding: 4.375rem 1.25rem;
 }
 
 .contato-container {
-  max-width: max-content;
-  padding: 60px 0px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .contato-titulo {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   color: #c74323;
   text-align: center;
-}
-
-.contato-container label {
-  display: block;
-  margin: 12px 0px;
-  font-weight: 400;
-  font-size: 12px;
-  color: #111111;
-}
-
-.contato-container input,
-textarea {
-  width: 450px;
-  padding: 10px 2px;
-  border: 1px solid #c74323;
-  border-radius: 4px;
-  background-color: #fff0e1;
-}
-
-.btn-contato {
-  display: block;
-  background-color: #fff0e1;
-  border: 1px solid #c74323;
-  border-radius: 4px;
-  padding: 7px 12px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: #c74323;
 }
 
 .contato-conteudo {
   display: flex;
   flex-wrap: wrap;
+  max-width: 860px;
   margin: 0 auto;
-  gap: 100px;
+  justify-content: center;
+  gap: 4.375rem;
+  place-items: center;
+}
+
+.formulario {
+  width: 45%;
+}
+
+form label {
+  display: block;
+  margin: 0.75rem 0;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #111111;
+}
+
+form input,
+textarea {
+  width: 100%;
+  padding: 0.625rem;
+  border: 1px solid #c74323;
+  border-radius: 4px;
+  background-color: #fff0e1;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-contato {
+  display: block;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 7px 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #fff0e1;
+  background-color: #c74323;
+  margin-top: 0.625rem;
+}
+
+.btn-contato:hover {
+  background-color: #c25a40;
 }
 
 .contato-info {
@@ -249,13 +280,21 @@ textarea {
   flex-wrap: wrap;
   color: #3c3c3c;
   font-weight: 700;
-  font-size: 24px;
-  padding-top: 12px;
+  font-size: 1.5rem;
+  padding-top: 0.75rem;
+}
+
+.contato-info a {
+  color: #3c3c3c;
+}
+
+.contato-info a:hover {
+  color: #000000;
 }
 
 .contato-info li:first-child {
   color: #c74323;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
 }
 
@@ -267,15 +306,109 @@ textarea {
   transform: scale(1.15);
 }
 
+/* --------- RODAPÉ --------- */
+
 footer {
   background-color: #c74323;
   text-align: center;
   color: #fff0e1;
-  padding: 20px 0px;
+  padding: 1.25rem 0;
   font-weight: 300;
 }
 
 footer img {
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1000px) {
+  .intro-texto h1 {
+    font-size: 1.875rem;
+  }
+  .button {
+    font-size: 1rem;
+    margin-right: 0.3125rem;
+  }
+  .intro-texto p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    flex-direction: column;
+  }
+  .introducao img {
+    height: 300px;
+  }
+  .contato-info {
+    font-size: 1.125rem;
+  }
+  .contato-info li:first-child {
+    font-size: 1.375rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao img {
+    height: 250px;
+  }
+  .intro-texto h1 {
+    font-size: 1.5rem;
+  }
+  .intro-texto p {
+    font-size: 0.75rem;
+  }
+  .intro-conteudo {
+    display: block;
+  }
+
+  .dogs-container,
+  .cats-container {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .pets-titulo {
+    font-size: 1.75rem;
+  }
+
+  .contato-titulo {
+    font-size: 1.75rem;
+  }
+
+  .contato-conteudo {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .introducao-bg {
+    padding: 3.125rem 1.25rem;
+  }
+  .contato-conteudo {
+    flex-direction: column;
+    place-items: start;
+  }
+  .formulario {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-texto h1 {
+    font-size: 1.25rem;
+  }
+  .button {
+    font-size: 0.75rem;
+  }
+  header {
+    place-content: center;
+  }
+
+  header ul {
+    margin-top: 1.25rem;
+  }
 }
