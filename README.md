@@ -11,4 +11,3 @@ Requisitos do projeto:
 - [x] **CSS** 
 - [x] **Git/GitHub**
 
-https://ellenmariadev.github.io/landingpage-adoteaqui/
